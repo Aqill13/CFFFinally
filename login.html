@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - EduExcellence</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/auth.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img
+              class="edudeme-site-logo-img elementor-animation-"
+              src="https://demo2.pavothemes.com/edudeme/wp-content/uploads/2024/10/logo-01.svg"
+              alt="logo"
+            />
+          </a>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Ev</a></li>
+            <li><a href="about.html">Haqqımızda</a></li>
+            <li><a href="courses.html">Kurslar</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Əlaqə</a></li>
+          </ul>
+          <div class="auth-buttons">
+            <a href="login.html" class="btn btn-outline">Daxil ol</a>
+            <a href="register.html" class="btn btn-primary">Qeydiyyat</a>
+          </div>
+          <div class="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Login Form -->
+    <section class="auth-section">
+      <div class="container">
+        <div class="login-container">
+          <div class="login-header">
+            <div class="logo-login" aria-label="EduPortal Logo">📚</div>
+            <h1>Xoş Gəlmisiniz</h1>
+            <p>Tələbə hesabınıza daxil olun</p>
+          </div>
+
+          <form class="login-form" id="loginForm" action="#" method="POST" novalidate>
+            <div class="form-group">
+              <label for="email">E-poçt ünvanı</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                autocomplete="email"
+                placeholder="E-poçtunuzu daxil edin"
+                aria-describedby="email-error"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="password">Parol</label>
+              <div style="position: relative">
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  required
+                  autocomplete="current-password"
+                  placeholder="Parolunuzu daxil edin"
+                  aria-describedby="password-error"
+                />
+                <button
+                  type="button"
+                  class="password-toggle"
+                  onclick="togglePassword()"
+                  aria-label="Toggle password visibility"
+                >
+                  👁️
+                </button>
+              </div>
+            </div>
+
+            <div class="form-options">
+              <label class="remember-me">
+                <input type="checkbox" id="remember" name="remember" />
+                <span>Məni xatırla</span>
+              </label>
+              <a href="#" class="forgot-password">Şifrəni unutmusunuz?</a>
+            </div>
+
+            <button type="submit" class="login-btn">Daxil ol</button>
+
+            <div class="signup-link">
+              Hesabınız yoxdur? <a href="register.html">Hesab yaradın</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <div class="logo">
+              <a href="index.html">
+                <img
+                  class="edudeme-site-logo-img elementor-animation-"
+                  src="https://demo2.pavothemes.com/edudeme/wp-content/uploads/2024/10/logo-03.svg"
+                  alt="logo"
+                />
+              </a>
+            </div>
+            <p style="margin-top: 20px">
+              Keyfiyyətli təhsil və innovativ öyrənmə təcrübələri vasitəsilə
+              həyatı dəyişdirmək.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3>Sürətli bağlantılar</h3>
+            <ul>
+              <li><a href="index.html">Ev</a></li>
+              <li><a href="about.html">Haqqımızda</a></li>
+              <li><a href="courses.html">Kurslar</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Əlaqə</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Kurslar</h3>
+            <ul>
+              <li>
+                <a href="courses.html?category=proqramlaşdırma"
+                  >Proqramlaşdırma</a
+                >
+              </li>
+              <li><a href="courses.html?category=biznes">Biznes</a></li>
+              <li><a href="courses.html?category=dizayn">Dizayn</a></li>
+              <li><a href="courses.html?category=dillər">Dillər</a></li>
+              <li><a href="courses.html">Bütün Kurslar</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Əlaqə məlumatı</h3>
+            <ul class="contact-info">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Bakı ş. Mustafa Topçubaşov
+                k. 23A
+              </li>
+              <li><i class="fas fa-phone"></i> (+994) 50-373-0035</li>
+              <li><i class="fas fa-envelope"></i> aqilkalbiyev01@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Edudeme. Bütün hüquqlar qorunur.</p>
+          <ul class="footer-bottom-links">
+            <li><a href="#">Məxfilik Siyasəti</a></li>
+            <li><a href="#">Xidmət Şərtləri</a></li>
+            <li><a href="#">Kuki Siyasəti</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function togglePassword() {
+        const passwordInput = document.getElementById("password");
+        const toggleButton = document.querySelector(".password-toggle");
+
+        if (passwordInput.type === "password") {
+          passwordInput.type = "text";
+          toggleButton.textContent = "🙈";
+          toggleButton.setAttribute("aria-label", "Hide password");
+        } else {
+          passwordInput.type = "password";
+          toggleButton.textContent = "👁️";
+          toggleButton.setAttribute("aria-label", "Show password");
+        }
+      }
+
+      // const loginForm = document.getElementById("loginForm");
+
+      // loginForm.addEventListener("submit", function (e) {
+      //   e.preventDefault();
+
+      //   const email = document.getElementById("email").value;
+      //   const password = document.getElementById("password").value;
+
+      //   if (email === "a@gmail.com" && password === "1") {
+      //     localStorage.setItem("isLoggedIn", "true");
+      //     window.location.href = "index.html";
+      //   } else {
+      //     alert("İstifadəçi adı və ya şifrə yanlışdır!");
+      //   }
+      // });
+    </script>
+  </body>
+</html>

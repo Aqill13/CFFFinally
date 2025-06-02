@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - EduExcellence</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img
+              class="edudeme-site-logo-img elementor-animation-"
+              src="https://demo2.pavothemes.com/edudeme/wp-content/uploads/2024/10/logo-01.svg"
+              alt="logo"
+            />
+          </a>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Ev</a></li>
+            <li><a href="about.html">Haqqımızda</a></li>
+            <li><a href="courses.html">Kurslar</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html" class="active">Əlaqə</a></li>
+          </ul>
+          <div class="auth-buttons">
+            <a href="login.html" class="btn btn-outline">Daxil ol</a>
+            <a href="register.html" class="btn btn-primary">Qeydiyyat</a>
+          </div>
+          <div class="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+      <div class="container contact-hero-content">
+        <!-- Sol tərəf mətn -->
+        <div class="contact-hero-text">
+          <span class="section-tag">Əlaqə</span>
+          <h2>Bizimlə Əlaqə Qurun</h2>
+          <p>
+            Suallarınız, təklifləriniz və əməkdaşlıq üçün bizimlə əlaqə
+            saxlamaqdan çəkinməyin. Komandamız sizə kömək etməyə hər zaman
+            hazırdır.
+          </p>
+          <a href="#contact-form" class="hero-btn">Bizə Yazın</a>
+        </div>
+        <div class="contact-hero-img">
+          <img src="img/contact-hero.jpg" alt="Kurslara Başla" />
+
+          <div class="social-box instagram">
+            <i class="fab fa-instagram"></i><span>Instagram</span>
+          </div>
+          <div class="social-box facebook">
+            <i class="fab fa-facebook-f"></i><span>Facebook</span>
+          </div>
+          <div class="social-box twitter">
+            <i class="fab fa-twitter"></i><span>Twitter</span>
+          </div>
+          <div class="social-box linkedin">
+            <i class="fab fa-linkedin-in"></i><span>LinkedIn</span>
+          </div>
+          <div class="social-box youtube">
+            <i class="fab fa-youtube"></i><span>YouTube</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="contact-info-section">
+      <div class="container">
+        <div class="contact-info-grid">
+          <div class="contact-info-card">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3>Məkanımız</h3>
+            <p>Bakı, Mustafa Topçubaşov 23A<br />Azərbaycan</p>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <h3>Telefon nömrəsi</h3>
+            <p>Əsas: (+994) 50-373-0035<br />Dəstək: (+994) 55-961-2005</p>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3>E-poçt ünvanı</h3>
+            <p>
+              aqilkalbiyev01@gmail.com
+              <br />
+              aqlklbyv040@gmail.com
+            </p>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h3>İş saatları</h3>
+            <p>B.E - C: 9:00 - 18:00<br />Şənbə - Bazar: Bağlıdır</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form-section" id="contact-form">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-form-container">
+            <div class="section-header">
+              <h2>Bizə Mesaj Göndərin</h2>
+              <p>
+                Sizdən eşitmək istərdik. Aşağıdakı formanı doldurun və biz ən
+                qısa zamanda sizinlə əlaqə saxlayacağıq.
+              </p>
+            </div>
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="name">Ad*</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">E-poçt ünvanı*</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Telefon nömrəsi</label>
+                <input type="tel" id="phone" name="phone" />
+              </div>
+              <div class="form-group">
+                <label for="subject">Mövzu*</label>
+                <input type="text" id="subject" name="subject" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Mesaj*</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  required
+                ></textarea>
+              </div>
+              <div class="form-group checkbox-group">
+                <input
+                  type="checkbox"
+                  id="privacy-policy"
+                  name="privacy-policy"
+                  required
+                />
+                <label for="privacy-policy"
+                  >Mən məxfilik siyasəti və xidmət şərtləri ilə razıyam.</label
+                >
+                <span class="error-message" id="privacy-policy-error"></span>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Mesaj Göndər
+              </button>
+            </form>
+          </div>
+          <div class="contact-map">
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3268.0456243087033!2d49.832308176256134!3d40.39621597144285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d7b7fd08761%3A0xfb63c3124bbe7458!2zMjMgTXVzdGFmYSBUb3DDp3ViYcWfb3YsIEJha8Sx!5e1!3m2!1saz!2saz!4v1748863829885!5m2!1saz!2saz"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Tez-tez verilən suallar</h2>
+          <p>Xidmətlərimizlə bağlı ümumi suallara cavab tapın</p>
+        </div>
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Kursa necə yazılmaq olar?</h3>
+              <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Kursa yazılmaq üçün sadəcə hesab yaradın, kurs kataloqumuza
+                baxın, maraqlandığınız kursu seçin və "İndi qeydiyyatdan keçin"
+                düyməsini klikləyin. Kredit kartları və PayPal daxil olmaqla
+                müxtəlif ödəniş üsullarından istifadə edərək ödəyə bilərsiniz.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Geri ödəmə siyasətiniz nədir?</h3>
+              <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Əksər kurslar üçün 30 günlük pul geri zəmanəti təklif edirik.
+                Əgər satın aldığınızdan razı deyilsinizsə, kurs məzmununun
+                30%-dən azını tamamlamağınız şərti ilə qeydiyyatdan keçdikdən
+                sonra 30 gün ərzində pulun geri qaytarılmasını tələb edə
+                bilərsiniz.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>
+                Satın aldıqdan sonra nə qədər müddət ərzində kursa daxil ola
+                bilərəm?
+              </h3>
+              <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Bir kurs satın aldıqdan sonra, kurs materiallarına ömür boyu
+                giriş əldə edirsiniz. İstənilən vaxt, hətta kursu bitirdikdən
+                sonra məzmuna yenidən baxa bilərsiniz.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Kurslarınızı almaq üçün hər hansı ilkin şərtlər varmı?</h3>
+              <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                İlkin şərtlər kursa görə dəyişir. Əsas kurslar adətən qabaqcadan
+                bilik tələb etmir, qabaqcıl kurslarda isə xüsusi ilkin şərtlər
+                ola bilər. Hər bir kursun təsviri hər hansı tələb olunan bilik
+                və ya bacarıqları aydın şəkildə ifadə edir.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Kursu bitirdikdən sonra sertifikatlar təklif edirsiniz?</h3>
+              <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Bəli, başa çatmış bütün kurslar üçün rəqəmsal sertifikatlar
+                təqdim edirik. Bu sertifikatlar birbaşa LinkedIn profilinizdə və
+                ya digər sosial media platformalarında endirilə, çap oluna və ya
+                paylaşıla bilər.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <div class="logo">
+              <a href="index.html">
+                <img
+                  class="edudeme-site-logo-img elementor-animation-"
+                  src="https://demo2.pavothemes.com/edudeme/wp-content/uploads/2024/10/logo-03.svg"
+                  alt="logo"
+                />
+              </a>
+            </div>
+            <p style="margin-top: 20px">
+              Keyfiyyətli təhsil və innovativ öyrənmə təcrübələri vasitəsilə
+              həyatı dəyişdirmək.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3>Sürətli bağlantılar</h3>
+            <ul>
+              <li><a href="index.html">Ev</a></li>
+              <li><a href="about.html">Haqqımızda</a></li>
+              <li><a href="courses.html">Kurslar</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Əlaqə</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Kurslar</h3>
+            <ul>
+              <li>
+                <a href="courses.html?category=proqramlaşdırma">Proqramlaşdırma</a>
+              </li>
+              <li><a href="courses.html?category=biznes">Biznes</a></li>
+              <li><a href="courses.html?category=dizayn">Dizayn</a></li>
+              <li><a href="courses.html?category=dillər">Dillər</a></li>
+              <li><a href="courses.html">Bütün Kurslar</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Əlaqə məlumatı</h3>
+            <ul class="contact-info">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Bakı ş. Mustafa Topçubaşov
+                k. 23A
+              </li>
+              <li><i class="fas fa-phone"></i> (+994) 50-373-0035</li>
+              <li><i class="fas fa-envelope"></i> aqilkalbiyev01@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Edudeme. Bütün hüquqlar qorunur.</p>
+          <ul class="footer-bottom-links">
+            <li><a href="#">Məxfilik Siyasəti</a></li>
+            <li><a href="#">Xidmət Şərtləri</a></li>
+            <li><a href="#">Kuki Siyasəti</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <button id="back-to-top" title="Back to Top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <!-- <script>
+      if (!localStorage.getItem("isLoggedIn")) {
+        window.location.href = "login.html";
+      }
+      window.addEventListener("beforeunload", function () {
+        localStorage.removeItem("isLoggedIn");
+      });
+    </script> -->
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+  </body>
+</html>

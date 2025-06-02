@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses - Edudeme</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/courses.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img
+              class="edudeme-site-logo-img elementor-animation-"
+              src="https://demo2.pavothemes.com/edudeme/wp-content/uploads/2024/10/logo-01.svg"
+              alt="logo"
+            />
+          </a>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Ev</a></li>
+            <li><a href="about.html">Haqqımızda</a></li>
+            <li><a href="courses.html" class="active">Kurslar</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Əlaqə</a></li>
+          </ul>
+          <div class="auth-buttons">
+            <a href="login.html" class="btn btn-outline">Daxil ol</a>
+            <a href="register.html" class="btn btn-primary">Qeydiyyat</a>
+          </div>
+          <div class="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Courses Hero -->
+    <section class="courses-hero">
+      <div class="container courses-hero-content">
+        <div class="courses-hero-text">
+          <span class="section-tag">Kurslarımız</span>
+          <h2>İstədiyin sahəni seç və öyrənməyə bu gün başla</h2>
+          <p>
+            Peşəkar təlimçilərlə onlayn və oflayn kurslar. Proqramlaşdırma,
+            dizayn, biznes və daha çox sahədə biliklərini artır. İndi
+            qeydiyyatdan keç və inkişaf et.
+          </p>
+          <a href="#all-courses" class="hero-btn">Bütün Kurslara Bax</a>
+        </div>
+        <div class="best-seller-box">
+          <span class="box-title">⭐ Ən çox satılan kurs</span>
+          <h3 class="course-name">Full Stack Web Development</h3>
+          <p class="course-desc">
+            Sıfırdan öyrən, real layihələrlə təcrübə qazan.
+          </p>
+
+          <div class="course-stats" style="margin-bottom: 0">
+            <div class="stat-box">
+              <i class="fas fa-users"></i>
+              <span>1250+ satış</span>
+            </div>
+            <div class="stat-box">
+              <i class="fas fa-eye"></i>
+              <span>8000+ baxış</span>
+            </div>
+            <div class="stat-box">
+              <i class="fas fa-clock"></i>
+              <span>120 saat</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="courses-hero-img">
+          <img src="img/courses-hero.jpg" alt="Kurslara Başla" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Course Search & Filter -->
+    <section class="course-filter">
+      <div class="container">
+        <div class="search-bar">
+          <input type="text" id="course-search" placeholder="Kurs axtar..." />
+          <button id="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="filter-options">
+          <div class="filter-group">
+            <label for="category-filter">Kateqoriya</label>
+            <select id="category-filter">
+              <option value="all">Bütün kateqoriyalar</option>
+              <option value="proqramlaşdırma">Proqramlaşdırma</option>
+              <option value="biznes">Biznes</option>
+              <option value="dizayn">Dizayn</option>
+              <option value="dillər">Dillər</option>
+              <option value="məlumat Elmi">Məlumat elmi</option>
+              <option value="marketinq">Marketinq</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="level-filter">Səviyyə</label>
+            <select id="level-filter">
+              <option value="all">Bütün səviyyələr</option>
+              <option value="başlanğıc">Başlanğıc</option>
+              <option value="orta">Orta</option>
+              <option value="qabaqcıl">Qabaqcıl</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="price-filter">Qiymət</label>
+            <select id="price-filter">
+              <option value="all">Hamsı</option>
+              <option value="free">Pulsuz</option>
+              <option value="paid">Ödənişli</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="sort-filter">Sırala</label>
+            <select id="sort-filter">
+              <option value="popularity">Populyarlıq</option>
+              <option value="newest">Ən yeni</option>
+              <option value="price-low">Qiymət: Aşağıdan yuxarı</option>
+              <option value="price-high">Qiymət: Yuxarıdan aşağı</option>
+              <option value="rating">Reytinq</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Course Listing -->
+    <section class="course-listing" id="all-courses">
+      <div class="container">
+        <div class="course-count">
+          <p>Showing <span id="course-count">0</span> courses</p>
+        </div>
+        <div class="courses-grid" id="courses-container">
+          <!-- JavaScript -->
+        </div>
+        <div class="pagination" id="pagination">
+          <!-- JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <div class="container">
+        <div class="newsletter-content">
+          <h2>Öyrənmə İcmamıza Qoşulun</h2>
+          <p>
+            Kurs yeniləmələri və eksklüziv təkliflər üçün bülletenimizə abunə
+            olun.
+          </p>
+          <form id="newsletter-form" class="newsletter-form">
+            <input type="email" placeholder="Email ünvanınız" required />
+            <button type="submit" class="btn btn-primary">Abunə ol</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <div class="logo">
+              <a href="index.html">
+                <img
+                  class="edudeme-site-logo-img elementor-animation-"
+                  src="https://demo2.pavothemes.com/edudeme/wp-content/uploads/2024/10/logo-03.svg"
+                  alt="logo"
+                />
+              </a>
+            </div>
+            <p style="margin-top: 20px">
+              Keyfiyyətli təhsil və innovativ öyrənmə təcrübələri vasitəsilə
+              həyatı dəyişdirmək.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3>Sürətli bağlantılar</h3>
+            <ul>
+              <li><a href="index.html">Ev</a></li>
+              <li><a href="about.html">Haqqımızda</a></li>
+              <li><a href="courses.html">Kurslar</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Əlaqə</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Kurslar</h3>
+            <ul>
+              <li>
+                <a href="courses.html?category=proqramlaşdırma"
+                  >Proqramlaşdırma</a
+                >
+              </li>
+              <li><a href="courses.html?category=biznes">Biznes</a></li>
+              <li><a href="courses.html?category=dizayn">Dizayn</a></li>
+              <li><a href="courses.html?category=dillər">Dillər</a></li>
+              <li><a href="courses.html">Bütün Kurslar</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Əlaqə məlumatı</h3>
+            <ul class="contact-info">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Bakı ş. Mustafa Topçubaşov
+                k. 23A
+              </li>
+              <li><i class="fas fa-phone"></i> (+994) 50-373-0035</li>
+              <li><i class="fas fa-envelope"></i> aqilkalbiyev01@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Edudeme. Bütün hüquqlar qorunur.</p>
+          <ul class="footer-bottom-links">
+            <li><a href="#">Məxfilik Siyasəti</a></li>
+            <li><a href="#">Xidmət Şərtləri</a></li>
+            <li><a href="#">Kuki Siyasəti</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <button id="back-to-top" title="Back to Top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <!-- <script>
+      if (!localStorage.getItem("isLoggedIn")) {
+        window.location.href = "login.html";
+      }
+      window.addEventListener("beforeunload", function () {
+        localStorage.removeItem("isLoggedIn");
+      });
+    </script> -->
+    <script src="js/main.js"></script>
+    <script src="js/courses.js"></script>
+  </body>
+</html>
